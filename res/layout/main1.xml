@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:padding="20dip">
+    
+    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record"
+            android:layout_gravity="center_horizontal"/>
+        
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/app_name"
+            android:layout_weight="1.0"
+            android:src="@drawable/audio"
+            android:layout_gravity="center_horizontal"
+            />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStart"
+                android:enabled="true"
+                android:text="@string/start_recording"
+                android:layout_weight="1.0"/>
+                
+                <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnStop"
+                android:text="@string/stop_recording"
+                android:enabled="false"
+                android:layout_weight="1.0"/>
+                
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnFormat"
+                android:text="Format (mp4)"
+                android:enabled="true"
+                android:layout_weight="1.0"/>
+        
+    </LinearLayout>
+    
+     <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+         <Button android:id="@+id/preview"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/preview"
+             android:enabled="false"
+              android:layout_weight="1.0"/>
+         
+         <Button android:id="@+id/recordagain"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/rerecord"
+             android:enabled="false"
+              android:layout_weight="1.0"/>
+         
+         
+         </LinearLayout>
+    
+    
+</LinearLayout>
